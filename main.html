@@ -27,7 +27,7 @@
       <!-- <sphere radius='2' /> -->
       <!-- </shape> -->
 
-      <!-- Aplicando transformações -->
+   <!-- Inicio Nucleuo Atomico -->
       <shape>
         <appearance>
           <material diffuseColor='0 1 1' />
@@ -84,6 +84,8 @@
         <sphere radius='1.05'>
         </shape>
       </transform>
+       <!--Fim Nucleuo Atomico -->
+      <!-- Inicio Eletron -->
       <transform translation='5 0.5 1'>
         <shape class="eletron" onclick="cardEletron">
           <appearance>
@@ -92,9 +94,10 @@
         <sphere radius='0.5'>
         </shape>
       </transform>
-
+     <!-- Fim Eletron -->
     </scene>
   </x3d>
+  <!-- Funções com JavaScript para ações quando clicar nos objetos -->
   <script>
 const eletrons = document.getElementsByClassName (eletron);
     function cardEletron(){
@@ -103,6 +106,7 @@ eletron.addEventListener("click", function () {
 })
 }
 </script>
+<!--Fim do script -->
 </body>
 
 </html>
