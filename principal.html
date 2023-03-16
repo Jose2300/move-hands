@@ -1,0 +1,108 @@
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <link rel="stylesheet" href="estilo.css">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Gm_cybKtO7vgrokL1OhXM7KEPW3vqa-znv_fLp1ClRt6dSV98fqvAWFTaRUz4o6IapXSwV2cACKNxnRQOqdiYeGbT4UrW6l-RUsNJOhdbyk" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9maWd1cmFzLWdlb21ldHJpY2FzLXgzZC5lZHNvbm1lbG8xLnJlcGwuY28v"/><script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+  <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>
+  </link>
+</head>
+
+
+<body>
+  <x3d with='500px' height='400px'>
+    <scene>
+      <!-- Criação da área que o objeto irá ocupar -->
+      <!-- <shape> -->
+      <!-- Definição da cor do objeto  -->
+      <!-- <appearance> -->
+      <!--   <material diffuseColor='1 0 0' /> -->
+      <!-- </appearance> -->
+
+      <!-- Definir o objeto -->
+      <!-- <box size='1 2 4' /> -->
+      <!-- <cylinder radius='1.5' height='4' /> -->
+      <!-- <cone bottomRadius='2' height='3' /> -->
+      <!-- <sphere radius='2' /> -->
+      <!-- </shape> -->
+
+      <!-- Aplicando transformações -->
+      <shape>
+        <appearance>
+          <material diffuseColor='0 1 1' />
+        </appearance>
+        <sphere radius='1.05'>
+      </shape>
+
+      <transform translation='0 -1 0'>
+        <shape>
+         <appearance>
+            <material diffuseColor='0 1 1' />
+          </appearance>
+          <sphere radius='1.05'>
+        </shape>
+      </transform>
+
+      <transform translation='1 0.5 0'>
+        <shape>
+          <appearance>
+          <material diffuseColor='0 0 1' />
+        </appearance>
+        <sphere radius='1.05'>
+        </shape>
+      </transform>
+      <transform translation='0 0.5 1'>
+        <shape>
+         <appearance>
+            <material diffuseColor='0 1 1' />
+          </appearance>
+          <sphere radius='1.05'>
+        </shape>
+      </transform>
+      <transform translation='1 0.5 0'>
+        <shape>
+          <appearance>
+          <material diffuseColor='0 0 1' />
+        </appearance>
+        <sphere radius='1.05'>
+        </shape>
+      </transform>
+      <transform translation='-1 0.5 1'>
+        <shape>
+          <appearance>
+          <material diffuseColor='0 0 1' />
+        </appearance>
+        <sphere radius='1.05'>
+        </shape>
+      </transform>
+      <transform translation='1 0.5 1'>
+        <shape>
+          <appearance>
+          <material diffuseColor='0 0 1' />
+        </appearance>
+        <sphere radius='1.05'>
+        </shape>
+      </transform>
+      <transform translation='5 0.5 1'>
+        <shape class="eletron" onclick="cardEletron">
+          <appearance>
+          <material diffuseColor='1 0 0' />
+        </appearance>
+        <sphere radius='0.5'>
+        </shape>
+      </transform>
+
+    </scene>
+  </x3d>
+  <script>
+const eletrons = document.getElementsByClassName (eletron);
+    function cardEletron(){
+eletron.addEventListener("click", function () {
+        eletron.alert= 'Maria eletron';
+})
+}
+</script>
+</body>
+
+</html>
