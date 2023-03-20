@@ -1,5 +1,21 @@
 function mudarDisplay() {
-        const minhaDiv = document.getElementById("card");
+        const minhaDiv = document.getElementById("card-eletron");
+        if (minhaDiv.style.display === "none") {
+          minhaDiv.style.display = "block";
+        } else {
+          minhaDiv.style.display = "none";
+        }
+      }
+      function mudarDispla() {
+        const minhaDiv = document.getElementById("card-proton");
+        if (minhaDiv.style.display === "none") {
+          minhaDiv.style.display = "block";
+        } else {
+          minhaDiv.style.display = "none";
+        }
+      }
+      function mudarDisplai() {
+        const minhaDiv = document.getElementById("card-neutron");
         if (minhaDiv.style.display === "none") {
           minhaDiv.style.display = "block";
         } else {
@@ -7,7 +23,7 @@ function mudarDisplay() {
         }
       }
 
-      var minhaDiv = document.getElementById("card");
+      if( minhaDiv==="card-neutron"|| minhaDiv==="card-neutron" || minhaDiv==="card-neutron" ){
       var posicaoInicial = {x: 0, y: 0};
       var posicaoAtual = {x: 0, y: 0};
       var mousePressionado = false;
@@ -34,4 +50,4 @@ function mudarDisplay() {
       document.addEventListener("mouseup", function(e) {
         mousePressionado = false;
       });
-      
+    }
