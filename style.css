@@ -18,6 +18,7 @@
   }
 
   body {
+    background-image: url(https://wallpaper.dog/large/970832.jpg);
     margin: 0;
     padding: 0;
   }
@@ -60,6 +61,16 @@
   #pose-result-left {
     text-align: left;
   }
- .card{
+ div{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  cursor: move;
 
+}
+#card-title{
+  
 }
