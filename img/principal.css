@@ -1,0 +1,127 @@
+
+
+/* Define o estilo padrão para o site */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1d1e22;
+    color: #fff;
+  }
+  header {
+    background-color: #a210cb;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Define o estilo do menu de navegação */
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav li {
+    margin-left: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+    color: #292f36;
+  }
+  
+  /* Define o estilo do título e subtítulo do cabeçalho */
+  h1, p {
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 48px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  /* Define o estilo das seções */
+  section {
+    padding: 50px;
+    background-color: #292f36;
+    color: #fff;
+  }
+  
+  section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+  /* Define o estilo das imagens */
+  .image-container {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  img{
+      float: left;
+      border: transparent thin solid;
+      padding: 5px;
+      margin: 0px 10px 10px 0;
+      max-width: 186px;
+  }
+  img, p {
+      display: inline-block;
+  }
+  
+  /* Define o estilo do rodapé */
+  footer {
+    background-color: #1d1e22;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+  }
+  
+  /* Define as regras de responsividade */
+  @media only screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav {
+      margin-top: 20px;
+      order: 2;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    section p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }

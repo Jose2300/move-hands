@@ -1,0 +1,25 @@
+#jupiter {
+    height: 12vmin;
+    width: 12vmin;
+  }
+  
+  #saturn {
+    height: 12vmin;
+    width: 12vmin;
+    border-radius: 0%;
+  }
+  
+  #uranus {
+    height: 5vmin;
+    width: 5vmin;
+  }
+  
+  #neptune {
+    height: 4vmin;
+    width: 4vmin;
+  }
+  #sol{
+    color:#f5f8f900;
+    position:relative;
+  }
+  

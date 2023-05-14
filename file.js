@@ -1,53 +1,36 @@
+
+const miDiv = document.getElementById("card-neutron");
+const minhaDiv = document.getElementById("card-eletron");
+const mDiv = document.getElementById("card-proton");
+
 function mudarDisplay() {
-        const minhaDiv = document.getElementById("card-eletron");
+        
         if (minhaDiv.style.display === "none") {
           minhaDiv.style.display = "block";
+          miDiv.style.display = "none";
+          mDiv.style.display = "none";
         } else {
           minhaDiv.style.display = "none";
         }
       }
       function mudarDispla() {
-        const minhaDiv = document.getElementById("card-proton");
-        if (minhaDiv.style.display === "none") {
-          minhaDiv.style.display = "block";
-        } else {
+        if (mDiv.style.display === "none") {
+          mDiv.style.display = "block";
           minhaDiv.style.display = "none";
+          miDiv.style.display = "none";
+        } else {
+          mDiv.style.display = "none";
         }
       }
       function mudarDisplai() {
-        const minhaDiv = document.getElementById("card-neutron");
-        if (minhaDiv.style.display === "none") {
-          minhaDiv.style.display = "block";
-        } else {
+        if (miDiv.style.display === "none") {
+          miDiv.style.display = "block";
           minhaDiv.style.display = "none";
+          mDiv.style.display = "none";
+        } else {
+          miDiv.style.display = "none";
         }
       }
 
-      if( minhaDiv==="card-neutron"|| minhaDiv==="card-neutron" || minhaDiv==="card-neutron" ){
-      var posicaoInicial = {x: 0, y: 0};
-      var posicaoAtual = {x: 0, y: 0};
-      var mousePressionado = false;
-      
-      minhaDiv.addEventListener("mousedown", function(e) {
-        posicaoInicial.x = e.clientX;
-        posicaoInicial.y = e.clientY;
-        mousePressionado = true;
-      });
-      
-      document.addEventListener("mousemove", function(e) {
-        if (mousePressionado) {
-          posicaoAtual.x = e.clientX;
-          posicaoAtual.y = e.clientY;
-          var deltaX = posicaoAtual.x - posicaoInicial.x;
-          var deltaY = posicaoAtual.y - posicaoInicial.y;
-          minhaDiv.style.left = (minhaDiv.offsetLeft + deltaX) + "px";
-          minhaDiv.style.top = (minhaDiv.offsetTop + deltaY) + "px";
-          posicaoInicial.x = posicaoAtual.x;
-          posicaoInicial.y = posicaoAtual.y;
-        }
-      });
-      
-      document.addEventListener("mouseup", function(e) {
-        mousePressionado = false;
-      });
-    }
+   
+     
