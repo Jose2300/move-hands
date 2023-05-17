@@ -1,4 +1,3 @@
-
 const miDiv = document.getElementById("card-neutron");
 const minhaDiv = document.getElementById("card-eletron");
 const mDiv = document.getElementById("card-proton");
@@ -31,6 +30,3 @@ function mudarDisplay() {
           miDiv.style.display = "none";
         }
       }
-
-   
-     

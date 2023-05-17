@@ -18,37 +18,37 @@
 <body>
 
   <h1>Simulação Terra e Lua </h1>
-  <x3d with='500px' height='400px'>
+  <x3d width='500px' height='400px'>
     <scene>
-
-  
-      <!--Prontons-->
-       <transform translation='1 0.5 0'>
-        <shape onclick="mudarDispla()">
+      <!-- Prótons -->
+      <transform translation='1 0.5 0'>
+        <shape onclick="mudarDisplay()">
           <appearance>
-          <ImageTexture url="https://x3dgraphics.com/examples/X3dForWebAuthors/Chapter01TechnicalOverview/earth-topo.jpg"/>
-        </appearance>
-        <sphere radius='1.05'>
+            <ImageTexture url="https://x3dgraphics.com/examples/X3dForWebAuthors/Chapter01TechnicalOverview/moonSkin.jpg"/>
+          </appearance>
+          <sphere radius='1.05'/>
         </shape>
       </transform>
-    
-      <!-- Fim dos Prontos -->
+  
+      <!-- Fim dos Prótons -->
+  
+      <!-- Início Núcleo Atômico -->
       
-       <!--Fim Nucleuo Atomico -->
-      <!-- Inicio Eletron -->
+      <!-- Fim Núcleo Atômico -->
+  
+      <!-- Início Elétron -->
       <transform translation='5 0.5 1'>
         <shape onclick="mudarDisplay()">
           <appearance>
-          <ImageTexture url="https://x3dgraphics.com/examples/X3dForWebAuthors/Chapter01TechnicalOverview/earth-topo.jpg"/>
-        </appearance>
-        <sphere radius='0.5'>
+            <ImageTexture url=""/>
+          </appearance>
+          <sphere radius='0.5'/>
         </shape>
       </transform>
-     
-        
-     <!-- Fim Eletron -->
+      <!-- Fim Elétron -->
     </scene>
   </x3d>
+  
   <div  id="lua" style="width: 14rem;  display:none">
     <img class="card-img-top" src="https://images.ecycle.com.br/wp-content/uploads/2020/09/15190656/sanni-sahil-cSm2a_-25YU-unsplash-1-scaled.jpg.webp" alt="Imagem de capa do card">
   <div style="margin: 55%;">

@@ -1,5 +1,4 @@
 
-
 /* Define o estilo padrão para o site */
 body {
     margin: 0;
@@ -110,18 +109,4 @@ body {
       margin-top: 20px;
       order: 2;
     }
-  
-    section {
-      padding: 20px;
-    }
-  
-    section h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-  
-    section p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-  }
+}
