@@ -22,4 +22,8 @@
     color:#f5f8f900;
     position:relative;
   }
-  
+  body {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+  }

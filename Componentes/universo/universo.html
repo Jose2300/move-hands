@@ -1,116 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta charset="utf-8">
-  <title>Solar System</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Sistema Solar</title>
   <link rel="stylesheet" href="universo.css">
+  <link rel="icon" href="https://i.pinimg.com/736x/da/10/22/da10224947f4c99cec902de30942e4bd.jpg" type="image/png">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Gm_cybKtO7vgrokL1OhXM7KEPW3vqa-znv_fLp1ClRt6dSV98fqvAWFTaRUz4o6IapXSwV2cACKNxnRQOqdiYeGbT4UrW6l-RUsNJOhdbyk" charset="UTF-8"></script>
+  <link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9maWd1cmFzLWdlb21ldHJpY2FzLXgzZC5lZHNvbm1lbG8xLnJlcGwuY28v"/>
+  <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+  <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <section>
-    <img class="object" src="https://www.imagensempng.com.br/wp-content/uploads/2022/02/34324.png" alt="" id="sun"
-      onclick="mudarDisplay()">
-    <img class="object planet"
-      src="https://img2.gratispng.com/20180426/hae/kisspng-mercury-the-nine-planets-solar-system-mars-5ae1d66f3116b0.6107957115247499352011.jpg"
-      alt="" id="mercury" onclick="">
-    <img class="object planet"
-      src="https://w7.pngwing.com/pngs/948/921/png-transparent-earth-venus-planet-solar-system-night-sky-earth-sphere-kids-astronomical-object.png"
-      alt="" id="venus">
-    <img class="object planet" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Terra.png" alt="" id="earth">
-    <img class="object planet"
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3lACHO74S0lLZktIN5aO8hpNyECa8t7d6DY4x0PYD&s" alt=""
-      id="mars">
-    <img class="object planet"
-      src="https://img1.gratispng.com/20180205/www/kisspng-jupiter-planet-solar-system-juno-saturn-jupiter-png-file-5a77ed55297064.7413130515178089811697.jpg"
-      alt="" id="jupiter">
-    <img class="object planet" src="https://cdn.pixabay.com/photo/2019/07/03/12/14/saturn-4314403_960_720.png" alt=""
-      id="saturn">
-    <img class="object planet"
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNzgBCCcZM9K61mFRtl7KqdYv_roTm_u9Ag_4DkLM&s" alt=""
-      id="uranus">
-    <img class="object planet"
-      src="https://w7.pngwing.com/pngs/364/431/png-transparent-earth-neptune-planet-earth-blue-atmosphere-sphere.png"
-      alt="" id="neptune">
-    <div class="object"
-      id="https://w7.pngwing.com/pngs/441/938/png-transparent-earth-apollo-program-light-full-moon-moon-atmosphere-monochrome-sphere.png">
-    </div>
+  <x3d>
+    <scene>
+      <!-- Sun -->
+      <transform translation='0 0 0'>
+        <shape>
+          <appearance>
+            <ImageTexture url="https://img.olhardigital.com.br/wp-content/uploads/2022/09/telescopio-pesquisa-sol.jpg"/>
+          </appearance>
+          <sphere radius='1.8'/>
+        </shape>
+      </transform>
 
-    <div class="object p-orbit"></div>
-    <div class="object p-orbit"></div>
-    <div class="object p-orbit"></div>
-    <div class="object p-orbit"></div>
-    <div class="object p-orbit"></div>
-    <div class="object p-orbit"></div>
-    <div class="object p-orbit"></div>
-    <div class="object p-orbit"></div>
-    <div class="object" id="m-orbit"></div>
-  </section>
-  <div id="sol" style="width: 18rem;  display:none; color:white;">
-    <p>O Sol é uma estrela do tipo anã amarela localizada na Via Láctea. É a única estrela do Sistema Solar, conjunto de
-      corpos celestes (planetas, planetas-anões, asteroides, cometas, meteoritos) que gira em torno do Sol. Tem 333 mil
-      vezes a massa da Terra, e suas dimensões são 110 vezes maiores do que as do nosso planeta.</p>
+      <!-- Mercury -->
+      <transform translation='0 0 4'>
+        <shape>
+          <appearance>
+            <Texture url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRigStJVkPvdCOF_7DhrInBMDquWc06SxT8h9WpU8M8ARR7qO30QuVvb3yuOzM-4QFwcTI&usqp=CAU"/>
+          </appearance>
+          <sphere radius='0.3'/>
+        </shape>
+      </transform>
 
-  </div>
-  <div id="terra" style="width: 18rem;  display:none; color:white;">
-    <p>A Terra é o terceiro planeta mais próximo do Sol, o mais denso e o quinto maior dos oito planetas do Sistema
-      Solar. É também o maior dos quatro planetas telúricos. É por vezes designada como Mundo ou Planeta Azul</p>
+      <!-- Venus -->
+      <transform translation='4 1 6'>
+        <shape>
+          <appearance>
+            <Texture url="https://upload.wikimedia.org/wikipedia/commons/1/1c/Solarsystemscope_texture_8k_venus_surface.jpg"/>
+          </appearance>
+          <sphere radius='0.4'/>
+        </shape>
+      </transform>
 
-  </div>
-  <div id="venus" style="width: 18rem;  display:none; color:white;">
-    <p>Vénus ou Vênus é o segundo planeta do Sistema Solar em ordem de distância a partir do Sol, orbitando-o a cada
-      224,7 dias. Recebeu seu nome em homenagem à deusa romana do amor e da beleza Vénus, equivalente a Afrodite.</p>
+      <!-- Earth -->
+      <transform translation='-9 0 0'>
+        <shape>
+          <appearance>
+            <Texture url="https://www.web3d.org/x3d/content/examples/Basic/earth-topo.png"/>
+          </appearance>
+          <sphere radius='0.5'/>
+        </shape>
+      </transform>
 
-  </div>
-  <div id="Jupiter" style="width: 18rem;  display:none; color:white;">
-    <p>Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do Sol.
-      Possui menos de um milésimo da massa solar, contudo tem 2,5 vezes a massa de todos os outros planetas em conjunto.
-      É um planeta gasoso, junto com Saturno, Urano e Netuno.</p>
+      <!-- Mars -->
+      <transform translation='15 0 0'>
+        <shape>
+          <appearance>
+            <Texture url="https://www.web3d.org/x3d/content/examples/Basic/Geospatial/images/Mars000.jpg"/>
+          </appearance>
+          <sphere radius='0.45'/>
+        </shape>
+      </transform>
 
-  </div>
-  <div id="urano" style="width: 18rem;  display:none; color:white;">
-    <p>Urano é o sétimo planeta a partir do Sol, o terceiro maior e o quarto mais massivo dos oito planetas do Sistema
-      Solar. Foi nomeado em homenagem ao deus grego do céu, Urano.</p>
+      <!-- Jupiter -->
+      <transform translation='0 0 -20'>
+        <shape>
+          <appearance>
+            <Texture url="https://thumbs.dreamstime.com/b/fechar-superf%C3%ADcie-da-jupitertextura-ou-fundo-do-planeta-texturizada-jardim-de-textura-191408755.jpg"/>
+          </appearance>
+          <sphere radius='1.2'/>
+        </shape>
+      </transform>
 
-  </div>
-  <div id="saturno" style="width: 18rem;  display:none; color:white;">
-    <p>Saturno é o sexto planeta a partir do Sol e o segundo maior do Sistema Solar atrás de Júpiter. Pertencente ao
-      grupo dos gigantes gasosos, possui cerca de 95 massas terrestres e orbita a uma distância média de 9,5 unidades
-      astronômicas.</p>
+      <!-- Saturn -->
+      <transform translation='28 0 0'>
+        <shape>
+          <appearance>
+            <Texture url="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1912b050-3675-4394-a3d1-d0b4cb43ae0a/ddeq42t-e150d2ad-e6cb-46e6-9a4e-a908d9a170bb.png/v1/fill/w_1280,h_640,q_80,strp/saturn_texture_map__fictional_rework__by_magentameteorite_ddeq42t-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvMTkxMmIwNTAtMzY3NS00Mzk0LWEzZDEtZDBiNGNiNDNhZTBhXC9kZGVxNDJ0LWUxNTBkMmFkLWU2Y2ItNDZlNi05YTRlLWE5MDhkOWExNzBiYi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LGF7FBdknIVE7_swXfEFe__n-IF6D2IXNWk4fjPE8Oo"/>
+          </appearance>
+          <sphere radius='1'/>
+        </shape>
+      </transform>
 
-  </div>
-  <div id="netuno" style="width: 18rem;  display:none; color:white;">
-    <p>Netuno ou Neptuno é o oitavo planeta do Sistema Solar, o último a partir do Sol desde a reclassificação de Plutão
-      para a categoria de planeta anão, em 2006. Pertencente ao grupo dos gigantes gasosos, possui um tamanho
-      ligeiramente menor que o de Urano, mas maior massa, equivalente a 17 massas terrestres.</p>
+      <!-- Uranus -->
+      <transform translation='-36 0 0'>
+        <shape>
+          <appearance>
+            <Texture url="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1912b050-3675-4394-a3d1-d0b4cb43ae0a/dc18wwb-e195cd81-efbd-480a-9f51-5100a530683d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE5MTJiMDUwLTM2NzUtNDM5NC1hM2QxLWQwYjRjYjQzYWUwYVwvZGMxOHd3Yi1lMTk1Y2Q4MS1lZmJkLTQ4MGEtOWY1MS01MTAwYTUzMDY4M2QuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SL33h8GpzTu_M-WWzxQjyw0osVvDZ-NlEKmLkRLzZA8"/>
+          </appearance>
+          <sphere radius='0.8'/>
+        </shape>
+      </transform>
 
-  </div>
-  <div id="mercurio" style="width: 18rem;  display:none; color:white;">
-    <p>Mercúrio é o menor e mais interno planeta do Sistema Solar, orbitando o Sol a cada 87,969 dias terrestres. A sua
-      órbita tem a maior excentricidade e o seu eixo apresenta a menor inclinação em relação ao plano da órbita dentre
-      todos os planetas do Sistema Solar.</p>
+      <!-- Neptune -->
+      <transform translation='0 0 -40'>
+        <shape>
+          <appearance>
+            <Texture url="https://static.vecteezy.com/ti/vetor-gratis/p3/2097266-fundo-abstrato-da-superficie-de-neptuno-gratis-vetor.jpg"/>
+          </appearance>
+          <sphere radius='0.75'/>
+        </shape>
+      </transform>
 
-  </div>
-  <div id="marte" style="width: 18rem;  display:none; color:white;">
-    <p>Marte é o quarto planeta a partir do Sol, o segundo menor do Sistema Solar. Batizado em homenagem a divindade
-      romana da guerra, muitas vezes é descrito como o "Planeta Vermelho", porque o óxido de ferro predominante em sua
-      superfície lhe dá uma aparência avermelhada.</p>
-
-  </div>
-
-
-
-  <script src="script.js"></script>
-  <script>
-    function mudarDisplay() {
-      const minhaDiv = document.getElementById("sol");
-      if (minhaDiv.style.display === "none") {
-        minhaDiv.style.display = "block";
-      } else {
-        minhaDiv.style.display = "none";
-      }
-    }
-  </script>
-
-  </html>
+      <!-- Pluto -->
+      <transform translation='48 0 0'>
+        <shape>
+          <appearance>
+            <Texture url="https://revistapesquisa.fapesp.br/wp-content/uploads/2021/02/SITE_Plutao-0-1140-1.jpg"/>
+          </appearance>
+          <sphere radius='0.3'/>
+        </shape>
+      </transform>
+    </scene>
+  </x3d>
+</body>
+</html>

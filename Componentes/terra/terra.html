@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Terra e Lua</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="terra.css">
   <link rel="icon" href="https://i.pinimg.com/736x/da/10/22/da10224947f4c99cec902de30942e4bd.jpg" type="image/png">
   <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Gm_cybKtO7vgrokL1OhXM7KEPW3vqa-znv_fLp1ClRt6dSV98fqvAWFTaRUz4o6IapXSwV2cACKNxnRQOqdiYeGbT4UrW6l-RUsNJOhdbyk" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9maWd1cmFzLWdlb21ldHJpY2FzLXgzZC5lZHNvbm1lbG8xLnJlcGwuY28v"/><script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
   <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>
@@ -18,37 +18,37 @@
 <body>
 
   <h1>Simulação Terra e Lua </h1>
-  <x3d width='500px' height='400px'>
+  <x3d width='600px' height='550px' margin='55%'>
+    
     <scene>
-      <!-- Prótons -->
+      <!-- Start Earth-->
       <transform translation='1 0.5 0'>
-        <shape onclick="mudarDisplay()">
+        <shape onclick="mudarDispla()">
           <appearance>
-            <ImageTexture url="https://x3dgraphics.com/examples/X3dForWebAuthors/Chapter01TechnicalOverview/moonSkin.jpg"/>
+            <Texture url="https://www.web3d.org/x3d/content/examples/Basic/earth-topo.png"/>
           </appearance>
           <sphere radius='1.05'/>
         </shape>
       </transform>
   
-      <!-- Fim dos Prótons -->
+      <!-- Finish-->
   
-      <!-- Início Núcleo Atômico -->
-      
-      <!-- Fim Núcleo Atômico -->
+     
   
-      <!-- Início Elétron -->
+      <!-- Start Moon -->
       <transform translation='5 0.5 1'>
         <shape onclick="mudarDisplay()">
           <appearance>
-            <ImageTexture url=""/>
+            <ImageTexture url="https://img.olhardigital.com.br/wp-content/uploads/2019/10/20191007102512.jpg"/>
           </appearance>
           <sphere radius='0.5'/>
         </shape>
       </transform>
-      <!-- Fim Elétron -->
+      <!-- End Moon-->
     </scene>
+ 
   </x3d>
-  
+
   <div  id="lua" style="width: 14rem;  display:none">
     <img class="card-img-top" src="https://images.ecycle.com.br/wp-content/uploads/2020/09/15190656/sanni-sahil-cSm2a_-25YU-unsplash-1-scaled.jpg.webp" alt="Imagem de capa do card">
   <div style="margin: 55%;">
@@ -58,18 +58,15 @@
   </div>
   <div  id="terra" style="width: 18rem;  display:none">
     <img class="card-img-top" src="https://s5.static.brasilescola.uol.com.br/img/2019/08/estrutura-terra.jpg">
-  <div>
+  <div style="margin: 55%;">
       <h5 class="card-title"> Terra </h5>
-      <p class="">A Terra é o terceiro planeta a contar do Sol e o quinto maior do Sistema Solar. Sua forma é praticamente esférica, com uma deformação que causa um achatamento dos pólos. Até onde se sabe o planeta em que vivemos é o único do nosso sistema solar em condições de abrigar vida da forma como a conhecemos.</p>
+      <p class="ele">A Terra é o terceiro planeta a contar do Sol e o quinto maior do Sistema Solar. Sua forma é praticamente esférica, com uma deformação que causa um achatamento dos pólos. Até onde se sabe o planeta em que vivemos é o único do nosso sistema solar em condições de abrigar vida da forma como a conhecemos.</p>
   </div>
-  </div>
-  <div  id="terra" style="width: 18rem;  display:none">
-    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/HAtomOrbitals.png/280px-HAtomOrbitals.png" alt="Imagem de capa do card">
-  <div>
-
+ 
+  
   <!-- Funções com JavaScript para ações quando clicar nos objetos -->
   <script src="script.js"></script>
 <!--Fim do script -->
 </body>
-
+<script src="terra.js"></script>
 </html>
