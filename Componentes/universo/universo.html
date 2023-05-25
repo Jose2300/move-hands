@@ -1,110 +1,198 @@
 <html>
-<html>
-
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Atomo de Hélio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sistema Solar</title>
+  <link rel="stylesheet" href="universo.css">
   <link rel="icon" href="https://i.pinimg.com/736x/da/10/22/da10224947f4c99cec902de30942e4bd.jpg" type="image/png">
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Gm_cybKtO7vgrokL1OhXM7KEPW3vqa-znv_fLp1ClRt6dSV98fqvAWFTaRUz4o6IapXSwV2cACKNxnRQOqdiYeGbT4UrW6l-RUsNJOhdbyk" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9maWd1cmFzLWdlb21ldHJpY2FzLXgzZC5lZHNvbm1lbG8xLnJlcGwuY28v"/><script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Gm_cybKtO7vgrokL1OhXM7KEPW3vqa-znv_fLp1ClRt6dSV98fqvAWFTaRUz4o6IapXSwV2cACKNxnRQOqdiYeGbT4UrW6l-RUsNJOhdbyk" charset="UTF-8"></script>
+  <link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9maWd1cmFzLWdlb21ldHJpY2FzLXgzZC5lZHNvbm1lbG8xLnJlcGwuY28v"/>
+  <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script>
   <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </link>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 
-
 <body>
-
-  <h1>Simulação de Atomo de Hélio </h1>
   <x3d>
     <scene>
-    
-    <!-- Inicio Nucleuo Atomico -->
-    <!-- neutrons-->
-      <shape onclick="mudarDisplai()">
-        <appearance>
-          <material diffuseColor='0 1 1' />
-        </appearance>
-        <sphere radius='1.05'>
-      </shape>
-      <transform translation='0 0.5 1'>
-        <shape onclick="mudarDisplai()">
-         <appearance>
-            <material diffuseColor='0 1 1' />
+      <!-- Sun -->
+      <transform translation='0 0 0'>
+        <shape onclick="mudarSol()">
+          <appearance>
+            <ImageTexture url="https://img.olhardigital.com.br/wp-content/uploads/2022/09/telescopio-pesquisa-sol.jpg"/>
           </appearance>
-          <sphere radius='1.05'>
+          <sphere radius='1.8'/>
         </shape>
       </transform>
-      <!--Fim dos Neutrons-->
-      <!--Prontons-->
-       <transform translation='1 0.5 0'>
-        <shape onclick="mudarDispla()">
+
+      <!-- Mercury -->
+      <transform translation='0 0 4'>
+        <shape onclick="mudarMercurio()">
           <appearance>
-          <material diffuseColor='0 0 1' />
-        </appearance>
-        <sphere radius='1.05'>
+            <Texture url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRigStJVkPvdCOF_7DhrInBMDquWc06SxT8h9WpU8M8ARR7qO30QuVvb3yuOzM-4QFwcTI&usqp=CAU"/>
+          </appearance>
+          <sphere radius='0.3'/>
         </shape>
       </transform>
-      <transform translation='1 0.5 1'>
-        <shape onclick="mudarDispla()">
+
+      <!-- Venus -->
+      <transform translation='4 1 6'>
+        <shape onclick="mudarVenus()">
           <appearance>
-          <material diffuseColor='0 0 1' />
-        </appearance>
-        <sphere radius='1.05'>
+            <Texture url="https://upload.wikimedia.org/wikipedia/commons/1/1c/Solarsystemscope_texture_8k_venus_surface.jpg"/>
+          </appearance>
+          <sphere radius='0.4'/>
         </shape>
       </transform>
-      <!-- Fim dos Prontos -->
-      
-       <!--Fim Nucleuo Atomico -->
-      <!-- Inicio Eletron -->
-      <transform translation='5 0.5 1'>
-        <shape onclick="mudarDisplay()">
+
+      <!-- Earth -->
+      <transform translation='-9 0 0'>
+        <shape onclick="mudarTerra()">
           <appearance>
-          <material  diffuseColor='1 0 0' />
-        </appearance>
-        <sphere radius='0.5'>
+            <Texture url="https://www.web3d.org/x3d/content/examples/Basic/earth-topo.png"/>
+          </appearance>
+          <sphere radius='0.5'/>
         </shape>
       </transform>
-      <transform translation='0 0.5 5'>
-        <shape onclick="mudarDisplay()">
+
+      <!-- Mars -->
+      <transform translation='15 0 0'>
+        <shape onclick="mudarMarte()">
           <appearance>
-          <material  diffuseColor='1 0 0' value="-"/>
-        </appearance>
-        <sphere radius='0.3'>
+            <Texture url="https://www.web3d.org/x3d/content/examples/Basic/Geospatial/images/Mars000.jpg"/>
+          </appearance>
+          <sphere radius='0.45'/>
         </shape>
       </transform>
-     <!-- Fim Eletron -->
+
+      <!-- Jupiter -->
+      <transform translation='0 0 -20'>
+        <shape onclick="mudarJupter()">
+          <appearance>
+            <Texture url="https://thumbs.dreamstime.com/b/fechar-superf%C3%ADcie-da-jupitertextura-ou-fundo-do-planeta-texturizada-jardim-de-textura-191408755.jpg"/>
+          </appearance>
+          <sphere radius='1.2'/>
+        </shape>
+      </transform>
+
+      <!-- Saturn -->
+      <transform translation='28 0 0'>
+        <shape onclick="mudarSaturno()">
+          <appearance>
+            <Texture url="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1912b050-3675-4394-a3d1-d0b4cb43ae0a/ddeq42t-e150d2ad-e6cb-46e6-9a4e-a908d9a170bb.png/v1/fill/w_1280,h_640,q_80,strp/saturn_texture_map__fictional_rework__by_magentameteorite_ddeq42t-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvMTkxMmIwNTAtMzY3NS00Mzk0LWEzZDEtZDBiNGNiNDNhZTBhXC9kZGVxNDJ0LWUxNTBkMmFkLWU2Y2ItNDZlNi05YTRlLWE5MDhkOWExNzBiYi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LGF7FBdknIVE7_swXfEFe__n-IF6D2IXNWk4fjPE8Oo"/>
+          </appearance>
+          <sphere radius='1'/>
+        </shape>
+      </transform>
+  
+
+      <!-- Uranus -->
+      <transform translation='-36 0 0'>
+        <shape onclick="mudarUrano()">
+          <appearance>
+            <Texture url="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1912b050-3675-4394-a3d1-d0b4cb43ae0a/dc18wwb-e195cd81-efbd-480a-9f51-5100a530683d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE5MTJiMDUwLTM2NzUtNDM5NC1hM2QxLWQwYjRjYjQzYWUwYVwvZGMxOHd3Yi1lMTk1Y2Q4MS1lZmJkLTQ4MGEtOWY1MS01MTAwYTUzMDY4M2QuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SL33h8GpzTu_M-WWzxQjyw0osVvDZ-NlEKmLkRLzZA8"/>
+          </appearance>
+          <sphere radius='0.8'/>
+        </shape>
+      </transform>
+
+      <!-- Neptune -->
+      <transform translation='0 0 -40'>
+        <shape onclick="mudarNetuno()">
+          <appearance>
+            <Texture url="https://static.vecteezy.com/ti/vetor-gratis/p3/2097266-fundo-abstrato-da-superficie-de-neptuno-gratis-vetor.jpg"/>
+          </appearance>
+          <sphere radius='0.75'/>
+        </shape>
+      </transform>
+
+      <!-- Pluto -->
+      <transform translation='48 0 0'>
+        <shape onclick="mudarPlutao()">
+          <appearance>
+            <Texture url="https://revistapesquisa.fapesp.br/wp-content/uploads/2021/02/SITE_Plutao-0-1140-1.jpg"/>
+          </appearance>
+          <sphere radius='0.3'/>
+        </shape>
+      </transform>
     </scene>
   </x3d>
-  <div  id="card-eletron" style="width: 14rem;  display:none">
-    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/HAtomOrbitals.png/280px-HAtomOrbitals.png" alt="Imagem de capa do card">
-  <div style="margin: 55%;">
-      <h5 class="card-title">Eletron</h5>
-      <p class="ele">O elétron ou eletrão é uma partícula subatômica, de símbolo e− ou β− , com carga elétrica negativa. Pertence à primeira geração da família dos léptons, e considera-se que são partículas elementares porque não possuem componentes conhecidos. A massa do elétron é aproximadamente 1/1836 da massa do próton. Wikipédia
-        Carga elétrica: −1 e; −1.602176565(35)×10−19 C; −4.80320451(10)×10−10</p>
+  <div  id="sun" style="width: 90rem;  display:none">
+    <img class="card-img-top" src="https://img.olhardigital.com.br/wp-content/uploads/2022/10/sol.jpg">
+  <div style="margin: 55%; width: 90rem;">
+      <h1 class="card-title">Sol</h1>
+      <p class="ele">O Sol é a estrela central do Sistema Solar. Todos os outros corpos do Sistema Solar, como planetas, planetas anões, asteroides, cometas e poeira, bem como todos os satélites associados a estes corpos, giram ao seu redor</p>
   </div>
   </div>
-  <div  id="card-proton" style="width: 18rem;  display:none">
-    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAWwy6c4z4wGgMU4JweCLTD-crgtQuhK98bQ&usqp=CAU">
-  <div style="margin: 55%;">
-      <h5 class="card-title">Próton</h5>
-      <p class="ele">O próton é uma partícula subatômica, presente no núcleo do átomo, e de carga elétrica positiva. </p>
-      <p> Sua carga elétrica real é de mesma intensidade que a da carga do elétron, aproximadamente 1,6 x 1019 C.</p>
+  <div  id="mercurio" style="width: 90rem;  display:none">
+    <img class="card-img-top" src="https://thumbs.dreamstime.com/b/merc%C3%BArio-planeta-do-sistema-solar-os-elementos-desta-imagem-fornecidos-por-nasa-dessa-pelo-tema-espa%C3%A7o-e-ci%C3%AAncia-de-tecnologia-179879161.jpg">
+  <div  style="margin: 55%; width: 90rem; ">
+      <h1 class="card-title"> Mercurio </h1>
+      <p class="ele">Mercúrio é o menor e mais interno planeta do Sistema Solar, orbitando o Sol a cada 87,969 dias terrestres. A sua órbita tem a maior excentricidade e o seu eixo apresenta a menor inclinação em relação ao plano da órbita dentre todos os planetas do Sistema Solar.</p>
+  </div>
+</div>
+  <div  id="venus" style="width: 90rem;  display:none">
+    <img class="card-img-top" src="https://s1.static.brasilescola.uol.com.br/be/e/venus(1).jpg">
+  <div style="margin: 55%; width: 90rem;">
+      <h5 class="card-title">Venus</h5>
+      <p class="ele">Vénus ou Vênus é o segundo planeta do Sistema Solar em ordem de distância a partir do Sol, orbitando-o a cada 224,7 dias. Recebeu seu nome em homenagem à deusa romana do amor e da beleza Vénus, equivalente a Afrodite</p>
   </div>
   </div>
-  <div  id="card-neutron" style="width: 18rem;  display:none">
-    <img class="card-img-top" src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/esquema-numero-de-massa-helio-quimica.jpg" alt="Imagem de capa do card">
-  <div style="margin: 55%;">
-      <h5 class="card-title">Neutron</h5>
-      <p class="ele">Nêutron (n) é uma pequena partícula que constitui o núcleo do átomo. Não tem carga e é formada por partículas ainda menores, as quais recebem o nome de quarks. O nêutron, ou neutrão (em português europeu), é formado por dois quarks down e um quark up.</p>
+  <div  id="earth" style="width: 90rem;  display:none">
+    <img class="card-img-top" src="https://segredosdomundo.r7.com/wp-content/uploads/2020/01/planeta-terra-conheca-tudo-sobre-o-nosso-planeta-natal.jpg">
+  <div style="margin: 55%; width: 90rem;">
+      <h1 class="card-title"> Terra</h1>
+      <p class="ele">A Terra é o terceiro planeta a contar do Sol e o quinto maior do Sistema Solar. Sua forma é praticamente esférica, com uma deformação que causa um achatamento dos pólos. Até onde se sabe o planeta em que vivemos é o único do nosso sistema solar em condições de abrigar vida da forma como a conhecemos.</p>
+  </div>
+</div>
+  <div  id="marte" style="width: 90rem;  display:none">
+    <img class="card-img-top" src="https://s1.static.brasilescola.uol.com.br/be/2021/11/planeta-marte.jpg">
+  <div style="margin: 55%; width: 90rem;">
+      <h5 class="card-title">Marte</h5>
+      <p class="ele">Marte é o quarto planeta a partir do Sol, o segundo menor do Sistema Solar. Batizado em homenagem a divindade romana da guerra, muitas vezes é descrito como o "Planeta Vermelho", porque o óxido de ferro predominante em sua superfície lhe dá uma aparência avermelhada. </p>
   </div>
   </div>
-  <!-- Funções com JavaScript para ações quando clicar nos objetos -->
-  <script src="atomo.js"></script>
-<!--Fim do script -->
+  
+  <div  id="jupter" style="width: 90rem;  display:none">
+    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg">
+  <div style="margin: 55%; width: 90rem;">
+      <h5 class="card-title"> Jupter </h5>
+      <p class="ele">Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do Sol. Possui menos de um milésimo da massa solar, contudo tem 2,5 vezes a massa de todos os outros planetas em conjunto. É um planeta gasoso, junto com Saturno, Urano e Netuno.</p>
+  </div>
+</div>
+  <div  id="saturno" style="width: 90rem;  display:none">
+    <img class="card-img-top" src="https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/0f0d865207019b9ec3e29ecc22be0e17.jpg">
+  <div style="margin: 55%; width: 90rem;">
+      <h1 class="card-title">Saturno</h1>
+      <p class="ele">Saturno é o sexto planeta a partir do Sol e o segundo maior do Sistema Solar atrás de Júpiter. Pertencente ao grupo dos gigantes gasosos, possui cerca de 95 massas terrestres e orbita a uma distância média de 9,5 unidades astronômicas.</p>
+  </div>
+  </div>
+  <div  id="urano" style="width: 90rem;  display:none">
+    <img class="card-img-top" src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2021/04/planeta-urano.jpg" alt="Imagem de capa do card">
+  <div style="margin: 55%; width: 90rem;">
+      <h1 class="card-title">Urano</h1>
+      <p class="ele">Urano é o sétimo planeta a partir do Sol, o terceiro maior e o quarto mais massivo dos oito planetas do Sistema Solar. Foi nomeado em homenagem ao deus grego do céu, Urano.</p>
+  </div>
+  </div>
+  <div  id="netuno" style="width: 90rem;  display:none">
+    <img class="card-img-top" src="https://s4.static.brasilescola.uol.com.br/be/2022/08/1-planeta-netuno.jpg">
+  <div style="margin: 55%; width: 90rem;">
+      <h1 class="card-title"> Netuno</h1>
+      <p class="ele">Netuno ou Neptuno é o oitavo planeta do Sistema Solar, o último a partir do Sol desde a reclassificação de Plutão para a categoria de planeta anão, em 2006. Pertencente ao grupo dos gigantes gasosos, possui um tamanho ligeiramente menor que o de Urano, mas maior massa, equivalente a 17 massas terrestres.</p>
+  </div>
+</div>
+  <div  id="plutao" style="width: 90rem;  display:none">
+    <img class="card-img-top" src="https://conteudo.imguol.com.br/c/noticias/04/2021/12/14/plutao-1639493431655_v2_1x1.jpg">
+  <div style="margin: 55%; width: 90rem;">
+      <h1 class="card-title"> Plutão</h1>
+      <p class="ele">Plutão, formalmente designado 134340 Plutão é um planeta anão do Sistema Solar e o nono maior e décimo mais massivo objeto observado diretamente orbitando o Sol.</p>
+  </div>
+</div>
+ 
+ 
 </body>
 
+<script src="universo.js"></script>
 </html>
