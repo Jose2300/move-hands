@@ -23,7 +23,29 @@
     position:relative;
   }
   body {
-    background-color: antiquewhite;
+    background-image: url(https://i.pinimg.com/736x/9b/64/a2/9b64a25dfad0735045bbcdfb99120fec.jpg);
     margin: 0;
     padding: 0;
   }
+  div{
+    word-wrap: break-word;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    cursor: move;
+  
+  }
+  #card-title{
+    width: 300px;
+    height: 400px;
+   
+    
+  }
+  .ele{
+    background-color: #ccc;
+    font-size: 50px;
+  }
+  
